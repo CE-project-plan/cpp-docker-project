@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  cpp-app:
+    build: .
+    container_name: cpp_app
+    depends_on:
+      - db
+
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: mydb
