@@ -4,11 +4,12 @@
 int main() {
     try {
         pqxx::connection C("dbname=mydb user=postgres password=password host=db port=5432");
-        if (C.is_open()) {
-            std::cout << "Connected to database successfully!" << std::endl;
-        }
+        pqxx::work W(C);
+        W.exec("CREATE TABLE IF NOT EXISTS week3_table (id SERIAL PRIMARY KEY, note TEXT);");
+        W.commit();
+        std::cout << "Table created successfully!" << std::endl;
     } catch (const std::exception &e) {
-        std::cerr << "Database Error: " << e.what() << std::endl;
+        std::cerr << e.what() << std::endl;
         return 1;
     }
     return 0;
