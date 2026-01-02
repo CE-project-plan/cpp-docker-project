@@ -4,3 +4,4 @@ C++ project with docker and ubuntu for system programming
 220304139- Bello Olanrenwaju Maleek(Project Manager/Team Lead)
 220304144 - Aminata Kone (C++ Developer)
 
+## Week 3: Database logic and Docker drivers updated by Student 3.
