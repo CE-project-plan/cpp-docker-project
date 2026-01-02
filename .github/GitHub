@@ -1,0 +1,19 @@
+Commit 1: Database connection setup using libpqxx
+
+This commit implements the initial database connection layer for the C++ application using the libpqxx library. It configures the connection parameters and verifies successful communication with the PostgreSQL database, enabling persistent data access for subsequent features.
+
+Commit 2: Implement CRUD operations for database interaction
+
+This commit adds core Create, Read, Update, and Delete (CRUD) operations to the application. These operations allow the system to manage database records effectively and establish the primary data interaction functionality required for the application.
+
+Commit 3: Add error handling and logging mechanisms
+
+This commit enhances the stability of the application by introducing structured error handling and logging around database and application operations. It ensures that runtime errors are properly captured, logged, and reported, improving debugging and maintainability.
+
+Commit 4: Add unit tests for database and application logic
+
+This commit introduces unit tests to validate the database connection and CRUD operations. The tests help ensure that the application functions correctly and provide early detection of errors during development and continuous integration.
+
+Commit 5: Update Docker image and commit test results
+
+This commit updates the application’s Docker image after integrating the Week 3 features and pushes the updated image to Docker Hub. It also documents and commits the test results, confirming that all implemented features were tested successfully.
