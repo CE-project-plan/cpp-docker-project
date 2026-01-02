@@ -1,12 +1,6 @@
 FROM ubuntu:22.04
-
-RUN apt-get update && apt-get install -y g++ libpqxx-dev libpqxx-dev libpqxx-dev libpqxx-dev libpqxx-dev libpqxx-dev libpqxx-dev
-
-WORKDIR /app
-
+RUN apt-get update && apt-get install -y g++ libpqxx-dev libpq-dev
 COPY main.cpp .
-
-RUN g++ main.cpp -o app
-
+# The fix: added -lpqxx -lpq to the build command
+RUN g++ main.cpp -o app -lpqxx -lpq
 CMD ["./app"]
-RUN apt-get update && apt-get install -y libpqxx-dev
