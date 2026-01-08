@@ -5,3 +5,5 @@ C++ project with docker and ubuntu for system programming
 220304144 - Aminata Kone (C++ Developer)
 
 ## Week 3: Database logic and Docker drivers updated by Student 3.
+
+One command deploys the whole system BY STUDENT 2 
