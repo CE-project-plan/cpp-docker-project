@@ -106,3 +106,16 @@ Application execution tested inside containers
 PostgreSQL stability verified during runtime
 
 
+
+
+Final Docker images were built, versioned, and pushed to Docker Hub with proper tags.
+
+C++ Application Image:
+https://hub.docker.com/r/aishaabba1/cpp-app
+
+PostgreSQL Database Image:
+https://hub.docker.com/r/aishaabba1/postgres-db
+
+Release Tag: v1.0.0
+
+
