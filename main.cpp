@@ -10,6 +10,8 @@ int main() {
         std::cout << "Table created successfully!" << std::endl;
     } catch (const std::exception &e) {
         std::cerr << e.what() << std::endl;
+        // TODO: update logic; W.exec ("UPDATE week3_table SET note'updated' WHERE id=1;);
+        // TODO: Delete logic: W.exec("DELETE FROM week3_table WHERE id=1;");
         return 1;
     }
     return 0;
