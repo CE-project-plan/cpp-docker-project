@@ -11,7 +11,7 @@ int main() {
         
 
         pqxx::work W(C); 
-        // Example: W.exec("CREATE TABLE IF NOT EXISTS users (id SERIAL, name TEXT);");
+        
         W.commit();
 
     } catch (const std::exception &e) {
